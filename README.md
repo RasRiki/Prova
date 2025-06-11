@@ -2,13 +2,13 @@
 
 ##Contenuto##
 =========
-*[Cosa fa](#cosafa).
-*[Singole funzioni](#sfunzioni).
-	*[addExtraText](#addExtraText).
-	*[addExtraLiteral](#addExtraLiteral).
-	*[createApp].
-		*[Data](#data).
-		*[getMessage()](#getm).
+* [Cosa fa](#cosafa).
+* [Singole funzioni](#sfunzioni).
+	* [addExtraText](#addExtraText).
+	* [addExtraLiteral](#addExtraLiteral).
+	* [createApp].
+		* [Data](#data).
+		* [getMessage()](#getm).
 
 [Cosa fa](#cosafa).
 Visualizza a schermo il testo che viene inserito nel campo di input.
