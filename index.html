@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Live Text Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <input type="text" v-model="userInput" placeholder="Alessandro, type something..." />
+    <h3>{{ getMessage() }}</h3>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    function addExtraText() {
+      return "MY TEXT: ";
+    }
+
+    function addExtraLiteral(input = '') {
+      return `(${input})`;
+    }
+
+    createApp({
+      data() {
+        return {
+          userInput: ''
+        };
+      },
+      methods: {
+        getMessage() {
+          return addExtraLiteral(addExtraText() + this.userInput.toUpperCase().trim()) || "Start typing above...";
+        }
+      }
+    }).mount('#app');
+  </script>
+
+</body>
+</html>

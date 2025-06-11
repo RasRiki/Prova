@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  margin: 0;
+}
+
+#app {
+  text-align: center;
+}
+
+input {
+  font-size: 18px;
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 300px;
+}
+
+h3 {
+  color: #333;
+}
