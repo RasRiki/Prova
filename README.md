@@ -1,0 +1,1 @@
+This project serves so that Alessandro can learn how to use GIT.
