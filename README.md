@@ -2,31 +2,31 @@
 
 ##Contenuto##
 =========
-*[Cosa fa](#cosafa)
-*[Singole funzioni](#sfunzioni)
-	*[addExtraText](#addExtraText)
-	*[addExtraLiteral](#addExtraLiteral)
-	*[createApp]
-		*[Data](#data)
-		*[getMessage()](#getm)
+*[Cosa fa](#cosafa).
+*[Singole funzioni](#sfunzioni).
+	*[addExtraText](#addExtraText).
+	*[addExtraLiteral](#addExtraLiteral).
+	*[createApp].
+		*[Data](#data).
+		*[getMessage()](#getm).
 
-#[Cosa fa](#cosafa)#
-Visualizza a schermo il testo che viene inserito nel campo di input
+#[Cosa fa](#cosafa)#.
+Visualizza a schermo il testo che viene inserito nel campo di input.
 
-#[addExtraText](#addExtratext)#
+#[addExtraText](#addExtratext)#.
 
-Restituisce "MY TEXT:"
+Restituisce "MY TEXT:".
 
-#[addExtraLiteral](#addExtraLiteral)#
+#[addExtraLiteral](#addExtraLiteral)#.
 
-Restituisce l'input inserito dall'utente
+Restituisce l'input inserito dall'utente.
 
-#[data()](#data)#
+#[data()](#data)#.
 
-Definisce le variabili che verranno rese reattive grazie a v-model;
+Definisce le variabili che verranno rese reattive grazie a v-model;.
 
-#[getMessage()](#getm)#
+#[getMessage()](#getm)#.
 
-Restituisce: My text: con accodato il testo che viene inserito(userInput che viene aggiornato ad ogni cambiamento) impostato 
-in grassetto rimuovendo gli spazi aggiunti di seguito o in precedenza
+Restituisce: My text: con accodato il testo che viene inserito(userInput che viene aggiornato ad ogni cambiamento) impostato. 
+in grassetto rimuovendo gli spazi aggiunti di seguito o in precedenza.
 
