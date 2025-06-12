@@ -12,6 +12,7 @@
     <input type="text" v-model="userInput" placeholder="Alessandro, type something..." />
     <h3>{{ getMessage() }}</h3>
   </div>
+  <p></p>
   <div>
     <input type="text" id="input" placeholder="Alessandro, type something...">
     <p id="output"></p>
@@ -30,7 +31,7 @@
     }
 
     input.addEventListener("input", () => {//Listener for input
-      output.textContent=input.value;
+      output.textContent=addExtraLiteral(addExtraText() + input.value.toUpperCase().trim())||"Start typing above ....";
     })
   
   </script>
