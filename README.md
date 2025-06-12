@@ -11,15 +11,16 @@
 		* [getMessage()](#getm).
 
 [Cosa fa](#cosafa).
-Visualizza a schermo il testo che viene inserito nel campo di input.
+Visualizza a schermo, richiamando la funzione getMessage(), il contenuto inserito nel campo di input.
+Impostando i caratteri in maiuscolo e rimuovendo gli spazi aggiuntivi agli estremi.
 
 [addExtraText](#addExtratext).
 
-Restituisce "MY TEXT:".
+Restituisce la stringa "MY TEXT:" che verrà poi concatenata all'interno del metodo getMessage().
 
 [addExtraLiteral](#addExtraLiteral).
 
-Restituisce l'input inserito dall'utente.
+Restituisce l'input inserito all'interno delle parentesi tonde.
 
 [data()](#data).
 
