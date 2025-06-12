@@ -18,7 +18,9 @@ input {
   margin-bottom: 16px;
   width: 300px;
 }
-
+#output{
+  text-align: center;
+}
 h3 {
   color: #333;
 }
