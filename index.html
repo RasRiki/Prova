@@ -22,7 +22,9 @@
     // VANILLA JS VERSION 
     const input= document.getElementById("input")//seleziono l'input
     const output= document.getElementById("output")//scelgo il paragrafo
-
+    function addText(){
+      return "MY TEXT: ";
+    }
     input.addEventListener("input", () => {//Listener for input
       output.textContent=input.value;
     })
