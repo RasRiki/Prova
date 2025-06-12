@@ -12,11 +12,16 @@
     <input type="text" v-model="userInput" placeholder="Alessandro, type something..." />
     <h3>{{ getMessage() }}</h3>
   </div>
+  <div>
+    <input type="text" id="input" placeholder="Alessandro, type something...">
+    <p id="output"></p>
+  </div><!--Input con Vanilla JS-->
 
 
   <script>
     // VANILLA JS VERSION 
-    
+    const message="Ciao";//Creo una variabile con il contenuto da mostrare
+    document.getElementById("text").textContent=message;
 
   </script>
 
