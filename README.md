@@ -20,7 +20,7 @@ Restituisce la stringa "MY TEXT:" che verrà poi concatenata all'interno del met
 
 [addExtraLiteral](#addExtraLiteral).
 
-Restituisce l'input, inserito all'interno delle parentesi tonde.
+Restituisce l'input inserito all'interno delle parentesi tonde.
 
 [data()](#data).
 
@@ -28,9 +28,4 @@ Definisce le variabili che verranno rese reattive grazie a v-model;.
 
 [getMessage()](#getm).
 
-Restituisce: My text: con accodato il testo che viene inserito(userInput che viene aggiornato ad ogni cambiamento) impostato. 
-in grassetto rimuovendo gli spazi aggiunti di seguito o in precedenza.
-
-```sh
-addExtraLiteral(addExtraText() + this.userInput.toUpperCase().trim()) || "Start typing above...";
-```
+Restituisce una stringa formata da "MY TEXT: " con accodato l'input dell'utente, tutto impostato in maiuscolo rimuovendo gli spazi aggiuntivi alle estremità.
