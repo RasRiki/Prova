@@ -15,7 +15,7 @@
   <p></p>
   <div>
     <input type="text" id="input" placeholder="Alessandro, type something...">
-    <p id="output"></p>
+    <h3 id="output"></h3>
   </div><!--Input with Vanilla JS-->
 
 
@@ -23,16 +23,20 @@
     // VANILLA JS VERSION 
     const input= document.getElementById("input")//seleziono l'input
     const output= document.getElementById("output")//scelgo il paragrafo
+    output.textContent="(MY TEXT: "+input.value.toUpperCase().trim()+")";
     function addExtraText(){
       return "MY TEXT: ";
     }
+
     function addExtraLiteral(inputLiteral=''){
       return `(${inputLiteral})`;
     }
 
-    input.addEventListener("input", () => {//Listener for input
-      output.textContent=addExtraLiteral(addExtraText() + input.value.toUpperCase().trim())||"Start typing above ....";
-    })
+      input.addEventListener("input", () => {//Listener for input
+      output.textContent = addExtraLiteral(addExtraText() + input.value.toUpperCase().trim()) || "Start typing above ....";
+    }) 
+    
+  
   
   </script>
 
