@@ -25,6 +25,18 @@
     <h3 id = "output">(MY TEXT:) What is this? Wow! Nice!</h3>
   </div><!--Input with Vanilla JS-->
 
+  <script>
+    function addExtraText() {
+      return "MY TEXT: ";
+    }
+
+    function addExtraLiteral(input = '') {
+      return `(${input})`;
+    }
+
+    
+    
+  </script>
 
   <script>
     // VANILLA JS VERSION 
@@ -40,13 +52,8 @@
   <script>
     const { createApp } = Vue;
 
-    function addExtraText() {
-      return "MY TEXT: ";
-    }
+    
 
-    function addExtraLiteral(input = '') {
-      return `(${input.toUpperCase().trim()})`;
-    }
     createApp({
       data() {
         return {
@@ -56,6 +63,7 @@
       methods: {
         getMessage() {
           return addExtraLiteral(addExtraText() + this.userInput) || "Start typing above...";
+          
         }
       }
     }).mount('#app');
