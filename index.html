@@ -10,7 +10,7 @@
 
   <div id="app">
     <input type="text" v-model="userInput" placeholder="Alessandro, type something..." />
-    <h3>{{ getMessage() }}</h3>
+    <h3>{{getMessage()}}</h3>
   </div>
   <p></p>
   <div>
@@ -21,12 +21,12 @@
 
   <script>
     // VANILLA JS VERSION 
-    var input = document.getElementById("input")//seleziono l'input
-    var output = document.getElementById("output")//scelgo il paragrafo
-    //output.textContent = "(MY TEXT: "+input.value.toUpperCase().trim()+")"; // FIX THIS!
+    var input=document.getElementById("input")//seleziono l'input
+    var output=document.getElementById("output")//scelgo il paragrafo
+    output.textContent = "(MY TEXT: "+input.value.toUpperCase().trim()+")"; // FIX THIS!
 
     input.addEventListener("input", function() {//Listener for input
-      output.textContent = addExtraLiteral(addExtraText() + input.value.toUpperCase().trim()) || "Start typing above ....";
+      output.textContent=addExtraLiteral(input.value.toUpperCase().trim()) || "Start typing above ....";
     });
   
   </script>
