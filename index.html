@@ -5,15 +5,6 @@
   <title>Alessandro Prova Project</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <link rel="stylesheet" href="style.css">
-  add comment here
-
-  <!-- 
-  DO SOME VUE 3 CORSE ONLINE TO LEARN IF YOU LIKE IT!
-  https://vueschool.io/courses/vuejs-3-fundamentals
-  https://www.udemy.com/course/vue-js-3-crash-course-for-beginners-2022/
-  https://www.youtube.com/watch?v=YrxBCBibVo0&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1
-  https://www.youtube.com/watch?v=RIApQjn9fvw&list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu
-  -->
 </head>
 <body>
 
@@ -23,19 +14,13 @@
   </div>
   <p></p>
   <div>
-<<<<<<< HEAD
     <input type="text" id="input" placeholder="Alessandro, type something... VANILLA JS EDITION" />
     <h3 id="output">(MY TEST:) What is this? Wow! Nice!</h3>
-=======
-    <input type="text" id="input" placeholder="Alessandro, type something... VANILLA JS EDITION">
-    <h3 id="output"></h3>
->>>>>>> parent of 7bfcc9a (Updating fix)
   </div><!--Input with Vanilla JS-->
 
 
   <script>
     // VANILLA JS VERSION 
-<<<<<<< HEAD
     var input=document.getElementById("input")//seleziono l'input
     var output=document.getElementById("output")//scelgo il paragrafo
     output.textContent = "(MY TEXT: "+input.value.toUpperCase().trim()+")"; // FIX THIS!
@@ -43,31 +28,10 @@
     input.addEventListener("input", function() {//Listener for input
       output.textContent=addExtraLiteral(input.value.toUpperCase().trim()) || "Start typing above ....";
     });
-=======
-    const input= document.getElementById("input")//seleziono l'input
-    const output= document.getElementById("output")//scelgo il paragrafo
-    output.textContent="(MY TEXT: "+input.value.toUpperCase().trim()+")";
-    function addExtraText(){
-      return "MY TEXT: ";
-    }
-
-    function addExtraLiteral(inputLiteral=''){
-      return `(${inputLiteral})`;
-    }
-
-      input.addEventListener("input", () => {//Listener for input
-      output.textContent = addExtraLiteral(addExtraText() + input.value.toUpperCase().trim()) || "Start typing above ....";
-    }) 
-    
-  
->>>>>>> parent of 7bfcc9a (Updating fix)
   
   </script>
 
   <script>
-<<<<<<< HEAD
-    // OPS! I RMOVED ALL! DO FORGET THIS COMMIT AND ROLLBACK TO THE OTHER COMMIT THAT WAS WORKING!
-=======
     const { createApp } = Vue;
 
     function addExtraText() {
@@ -90,7 +54,6 @@
         }
       }
     }).mount('#app');
->>>>>>> parent of 7bfcc9a (Updating fix)
   </script>
 
 
