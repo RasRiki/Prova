@@ -22,7 +22,7 @@
   <p></p>
   <div>
     <input type="text" id="input" placeholder="Alessandro, type something... VANILLA JS EDITION" />
-    <h3 id="output">(MY TEST:) What is this? Wow! Nice!</h3>
+    <h3 id="output">(MY TEXT:) What is this? Wow! Nice!</h3>
   </div><!--Input with Vanilla JS-->
 
 
@@ -30,10 +30,9 @@
     // VANILLA JS VERSION 
     var input=document.getElementById("input")//seleziono l'input
     var output=document.getElementById("output")//scelgo il paragrafo
-    output.textContent = "(MY TEXT: "+input.value.toUpperCase().trim()+")"; // FIX THIS!
 
     input.addEventListener("input", function() {//Listener for input
-      output.textContent=addExtraLiteral(input.value.toUpperCase().trim()) || "Start typing above ....";
+      output.textContent=addExtraLiteral(addExtraText() + input.value) || "Start typing above ....";
     });
   
   </script>
@@ -46,9 +45,8 @@
     }
 
     function addExtraLiteral(input = '') {
-      return `(${input})`;
+      return `(${input.toUpperCase().trim()})`;
     }
-
     createApp({
       data() {
         return {
@@ -57,7 +55,7 @@
       },
       methods: {
         getMessage() {
-          return addExtraLiteral(addExtraText() + this.userInput.toUpperCase().trim()) || "Start typing above...";
+          return addExtraLiteral(addExtraText() + this.userInput) || "Start typing above...";
         }
       }
     }).mount('#app');
