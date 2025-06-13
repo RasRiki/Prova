@@ -14,29 +14,20 @@
   </div>
   <p></p>
   <div>
-    <input type="text" id="input" placeholder="Alessandro, type something... VANILLA JS EDITION">
-    <h3 id="output"></h3>
+    <input type="text" id="input" placeholder="Alessandro, type something... VANILLA JS EDITION" />
+    <h3 id="output">(MY TEST:)</h3>
   </div><!--Input with Vanilla JS-->
 
 
   <script>
     // VANILLA JS VERSION 
-    const input= document.getElementById("input")//seleziono l'input
-    const output= document.getElementById("output")//scelgo il paragrafo
-    output.textContent="(MY TEXT: "+input.value.toUpperCase().trim()+")";
-    function addExtraText(){
-      return "MY TEXT: ";
-    }
+    var input = document.getElementById("input")//seleziono l'input
+    var output = document.getElementById("output")//scelgo il paragrafo
+    //output.textContent = "(MY TEXT: "+input.value.toUpperCase().trim()+")"; // FIX THIS!
 
-    function addExtraLiteral(inputLiteral=''){
-      return `(${inputLiteral})`;
-    }
-
-      input.addEventListener("input", () => {//Listener for input
+    input.addEventListener("input", function() {//Listener for input
       output.textContent = addExtraLiteral(addExtraText() + input.value.toUpperCase().trim()) || "Start typing above ....";
-    }) 
-    
-  
+    });
   
   </script>
 
@@ -57,7 +48,7 @@
           userInput: ''
         };
       },
-      methods: {
+      methods:{
         getMessage() {
           return addExtraLiteral(addExtraText() + this.userInput.toUpperCase().trim()) || "Start typing above...";
         }
