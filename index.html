@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset = "UTF-8">
   <title>Alessandro Prova Project</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <script src = "https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <link rel = "stylesheet" href = "style.css">
   <!-- 
   DO SOME VUE 3 CORSE ONLINE TO LEARN IF YOU LIKE IT!
   https://vueschool.io/courses/vuejs-3-fundamentals
@@ -15,24 +15,24 @@
 </head>
 <body>
 
-  <div id="app">
-    <input type="text" v-model="userInput" placeholder="Alessandro, type something..." />
+  <div id = "app">
+    <input type = "text" v-model = "userInput" placeholder = "Alessandro, type something..." />
     <h3>{{getMessage()}}</h3>
   </div>
   <p></p>
   <div>
-    <input type="text" id="input" placeholder="Alessandro, type something... VANILLA JS EDITION" />
-    <h3 id="output">(MY TEXT:) What is this? Wow! Nice!</h3>
+    <input type = "text" id = "input" placeholder = "Alessandro, type something... VANILLA JS EDITION" />
+    <h3 id = "output">(MY TEXT:) What is this? Wow! Nice!</h3>
   </div><!--Input with Vanilla JS-->
 
 
   <script>
     // VANILLA JS VERSION 
-    var input=document.getElementById("input")//seleziono l'input
-    var output=document.getElementById("output")//scelgo il paragrafo
+    var input = document.getElementById("input")//seleziono l'input
+    var output = document.getElementById("output")//scelgo il paragrafo
 
     input.addEventListener("input", function() {//Listener for input
-      output.textContent=addExtraLiteral(addExtraText() + input.value) || "Start typing above ....";
+      output.textContent = addExtraLiteral(addExtraText() + input.value) || "Start typing above ....";
     });
   
   </script>
