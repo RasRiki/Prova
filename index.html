@@ -26,6 +26,7 @@
   </div><!--Input with Vanilla JS-->
 
   <script>
+    //Common functions
     function addExtraText() {
       return "MY TEXT: ";
     }
@@ -34,8 +35,9 @@
       return `(${input})`;
     }
 
-    
-    
+    function formattedText(text){
+      return text.toUpperCase().trim();
+    }
   </script>
 
   <script>
@@ -44,16 +46,14 @@
     var output = document.getElementById("output")//scelgo il paragrafo
 
     input.addEventListener("input", function() {//Listener for input
-      output.textContent = addExtraLiteral(addExtraText() + input.value) || "Start typing above ....";
+      output.textContent = addExtraLiteral(addExtraText() + formattedText(input.value)) || "Start typing above ....";
     });
   
   </script>
 
   <script>
     const { createApp } = Vue;
-
     
-
     createApp({
       data() {
         return {
@@ -62,7 +62,7 @@
       },
       methods: {
         getMessage() {
-          return addExtraLiteral(addExtraText() + this.userInput) || "Start typing above...";
+          return addExtraLiteral(addExtraText() + formattedText(this.userInput)) || "Start typing above...";
           
         }
       }
